@@ -31,6 +31,7 @@ nav {
 
 nav .logo {
     display: flex;
+    padding-left: 10px;
 }
 
 nav .logo>img {
@@ -82,6 +83,8 @@ nav .logo>h3 {
 @media only screen and (max-width: 576px){
     nav{
         flex-direction: column;
+        height: auto;
+        padding-bottom: 15px;
     }
 
     .nav-items{
