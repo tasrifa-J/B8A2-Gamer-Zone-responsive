@@ -217,7 +217,37 @@ nav .logo>h3 {
     top: 45%;
 }
 
+#play-instantly-flex{
+    display: flex;
+    justify-content: space-between;
+    /* not working */
+}
 
+.play-instantly-title{
+    max-width: 300px;
+}
+
+.play-instantly-title h2{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    float: right;
+}
+
+.play-instantly-title p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 18px;
+    float: inline-end;
+}
+
+.play-instantly-image img:nth-child(2){
+    position: relative;
+    bottom: 255px;
+    left: -121px;
+}
 
 
 
