@@ -143,12 +143,55 @@ nav .logo>h3 {
     background-color: #4EC5F7;
 }
 
+#online-gaming-flex{
+    padding-bottom: 70px;
+}
+
+.online-gaming-title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.online-gaming-title h2 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.online-gaming-title p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 18px;
+}
+
+.online-gaming-main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    gap: 15px
+}
+
+.online-gaming-main>div>p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+
 
 /*********** Responsive codes *******/
 
 /* nav */
 @media only screen and (max-width: 576px) {
-    
+
     nav {
         flex-direction: column;
         height: auto;
@@ -182,13 +225,13 @@ nav .logo>h3 {
 
 /* banner */
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
 
-    #banner{
+    #banner {
         overflow: hidden;
     }
 
-    .full-banner-flex{
+    .full-banner-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -196,11 +239,11 @@ nav .logo>h3 {
         top: -680px
     }
 
-    .banner-right{
+    .banner-right {
         margin-top: 50px;
     }
 
-    .banner-right img{
+    .banner-right img {
         max-width: 370px;
         max-height: 470px;
     }
@@ -245,4 +288,38 @@ nav .logo>h3 {
         max-width: 400px;
     }
 
+}
+
+/********* Online gaming section ***********/
+
+@media only screen and (max-width: 576px){
+    .online-gaming-main {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px 15px;
+    }
+
+    .online-gaming-main > div{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .online-gaming-main {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px 15px;
+    }
+
+    .online-gaming-main > div{
+        margin-bottom: 20px;
+    }
+
+    
 }
