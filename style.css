@@ -143,7 +143,7 @@ nav .logo>h3 {
     background-color: #4EC5F7;
 }
 
-#online-gaming-flex{
+#online-gaming-flex {
     padding-bottom: 70px;
 }
 
@@ -184,6 +184,40 @@ nav .logo>h3 {
     line-height: 30px;
     padding-top: 15px;
 }
+
+.online-gaming-main>div>img:hover {
+    background: #000;
+    opacity: 20%;
+    border-radius: 16px;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.hover-me {
+    /* display: none; */
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    align-items: center;
+}
+
+.hover-me p {
+    font-size: 20px;
+    color: #FF42A5;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+
+.online-gaming-main>div>img:hover+.hover-me {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+}
+
+
 
 
 
@@ -292,7 +326,7 @@ nav .logo>h3 {
 
 /********* Online gaming section ***********/
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
     .online-gaming-main {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -301,14 +335,14 @@ nav .logo>h3 {
         padding: 15px 15px;
     }
 
-    .online-gaming-main > div{
+    .online-gaming-main>div {
         margin-bottom: 20px;
     }
 
-    
+
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     .online-gaming-main {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -317,9 +351,9 @@ nav .logo>h3 {
         padding: 15px 15px;
     }
 
-    .online-gaming-main > div{
+    .online-gaming-main>div {
         margin-bottom: 20px;
     }
 
-    
+
 }
