@@ -101,10 +101,6 @@ nav .logo>h3 {
 .full-banner-flex {
     display: flex;
     justify-content: space-between;
-    /* position: absolute; */
-    /* top: -590px; */
-    /* bottom: 30px;
-    left: 80px; */
 }
 
 .banner-left {
@@ -152,7 +148,7 @@ nav .logo>h3 {
 }
 
 .button-group>button {
-    transition: width 1s;
+    transition: 1s ease-in-out;
 }
 
 .button-group>button:hover {
@@ -210,21 +206,25 @@ nav .logo>h3 {
     padding-top: 15px;
 }
 
-.online-gaming-main>div>img:hover {
-    background: #000;
+.online-gaming-main>div:hover{
+    background: #fff;
     filter: brightness(50%);
     border-radius: 16px;
     transition: filter 0.5s;
     cursor: pointer;
 }
 
+.online-gaming-main>div:hover .hover-me{
+    opacity: 1;
+}
+
 .hover-me {
-    /* display: none; */
     display: grid;
     justify-content: center;
     position: relative;
     top: 45%;
     align-items: center;
+    opacity: 0;
 }
 
 .hover-me p {
@@ -234,13 +234,6 @@ nav .logo>h3 {
     padding-top: 15px;
 }
 
-
-.online-gaming-main>div>img:hover+.hover-me {
-    display: grid;
-    justify-content: center;
-    position: relative;
-    top: 45%;
-}
 
 #play-instantly-flex {
     display: flex;
@@ -275,9 +268,9 @@ nav .logo>h3 {
 }
 
 .play-instantly-image {
-    position: relative;
-    left: 360px;
-    top: 0;
+    position: absolute;
+    right: 100px;
+    top: 113em;
 }
 
 .play-instantly-image img:nth-child(2) {
@@ -287,39 +280,18 @@ nav .logo>h3 {
 }
 
 #buttons-flex {
-    margin-top: 210px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    overflow: hidden;
+    margin-top: 55em;
     margin-bottom: 120px;
 }
 
-.row-1 {
+.row-1{
     display: flex;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-evenly;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
-.row-1>button {
-    gap: 5px;
-}
-
-.row-2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
-
-#buttons-flex {
-    display: grid;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+.row-2{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -523,14 +495,15 @@ footer .logo>h3 {
     .banner-left {
         position: relative;
         left: -5px;
-        top: 666px
+        top: 666px;
+        margin-top: 100px !important;
     }
 
     .banner-right {
         position: absolute;
         right: -4px;
         top: 250px;
-
+        margin-top: 100px !important;
     }
 
 
@@ -624,7 +597,18 @@ footer .logo>h3 {
         margin-bottom: 20px;
     }
 
-
+/* 
+    .online-gaming-main>div:hover{
+        background: #fff;
+        filter: brightness(50%);
+        border-radius: 16px;
+        transition: filter 0.5s;
+        cursor: pointer;
+    }
+    
+    .online-gaming-main>div:hover .hover-me{
+        opacity: 1;
+    } */
 
 
 }
@@ -643,6 +627,19 @@ footer .logo>h3 {
     }
 
 
+    .online-gaming-main>div:hover{
+        background: #fff;
+        filter: brightness(50%);
+        border-radius: 16px;
+        transition: filter 0.5s;
+        cursor: pointer;
+    }
+    
+    .online-gaming-main>div:hover .hover-me{
+        opacity: 1;
+    }
+
+
 }
 
 /* play instantly section */
@@ -657,11 +654,17 @@ footer .logo>h3 {
         gap: 100px
     }
 
+
     .play-instantly-title {
         width: auto;
         position: static;
     }
 
+    .play-instantly-image {
+        /* position: absolute;
+        right: 100px;
+        top: 113em; */
+    }
 
     .play-instantly-image img:nth-child(1) {
         width: 80%;
@@ -721,24 +724,39 @@ footer .logo>h3 {
 
 @media only screen and (max-width: 576px) {
 
-    .row-1,
-    .row-2 {
+    #buttons-flex {
+        margin-top: 25em;
+    }
+
+    .row-1{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .row-1 button:nth-child(5){
+        position: relative;
+        left:45%;
+    }
+    
+    .row-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
 
-    .row-1,
-    .row-2 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
+    #buttons-flex {
+        margin-top: -13em !important;
     }
 }
 
