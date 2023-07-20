@@ -101,12 +101,23 @@ nav .logo>h3 {
 .full-banner-flex {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: -590px;
+    /* position: absolute; */
+    /* top: -590px; */
+    /* bottom: 30px;
+    left: 80px; */
 }
 
 .banner-left {
     margin-top: 50px;
+    position: absolute;
+    left: 168px;
+    top: 250px;
+}
+
+.banner-right {
+    position: absolute;
+    right: 168px;
+    top: 250px;
 }
 
 .content-positioning h4 {
@@ -162,6 +173,7 @@ nav .logo>h3 {
 }
 
 .online-gaming-title {
+    margin-top: 80px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -184,7 +196,6 @@ nav .logo>h3 {
 }
 
 .online-gaming-main {
-    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
@@ -447,33 +458,6 @@ footer .logo>h3 {
     padding-bottom: 50px;
 }
 
-/* footer */
-
-@media only screen and (max-width: 576px) {
-    .foot-menu ul, .foot-menu-2 ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .foot-para{
-        display: flex;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    .foot-menu ul, .foot-menu-2 ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .foot-para{
-        display: flex;
-        text-align: center;
-    }
-}
 
 
 
@@ -711,5 +695,33 @@ footer .logo>h3 {
         justify-content: center;
         align-items: center;
         padding: 20px;
+    }
+}
+
+/* footer */
+
+@media only screen and (max-width: 576px) {
+    .foot-menu ul, .foot-menu-2 ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .foot-para{
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .foot-menu ul, .foot-menu-2 ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .foot-para{
+        display: flex;
+        text-align: center;
     }
 }
