@@ -512,7 +512,7 @@ footer .logo>h3 {
         justify-content: center;
         align-items: center;
         position: relative;
-        top: -680px
+        top: -680px;
     }
 
     .banner-right {
@@ -597,18 +597,6 @@ footer .logo>h3 {
         margin-bottom: 20px;
     }
 
-/* 
-    .online-gaming-main>div:hover{
-        background: #fff;
-        filter: brightness(50%);
-        border-radius: 16px;
-        transition: filter 0.5s;
-        cursor: pointer;
-    }
-    
-    .online-gaming-main>div:hover .hover-me{
-        opacity: 1;
-    } */
 
 
 }
@@ -661,9 +649,9 @@ footer .logo>h3 {
     }
 
     .play-instantly-image {
-        /* position: absolute;
-        right: 100px;
-        top: 113em; */
+        position: absolute;
+        right: 6em;
+        top: 265em;
     }
 
     .play-instantly-image img:nth-child(1) {
@@ -757,6 +745,27 @@ footer .logo>h3 {
 
     #buttons-flex {
         margin-top: -13em !important;
+    }
+
+    .row-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    
+    .row-2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
     }
 }
 
