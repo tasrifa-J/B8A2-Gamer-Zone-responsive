@@ -514,22 +514,24 @@ footer .logo>h3 {
 @media only screen and (max-width: 576px) {
 
     #banner {
-        overflow: hidden;
+        /* overflow: hidden; */
         display: flex;
+        flex-direction: column;
     }
 
-    /* .banner-left {
-        margin-top: 50px;
-        position: absolute;
-        left: 40px;
-        top: 250px;
+
+    .banner-left {
+        position: relative;
+        left: -5px;
+        top: 666px
     }
 
     .banner-right {
         position: absolute;
-        right: 10px;
-        top: 305px;
-    } */
+        right: -4px;
+        top: 250px;
+
+    }
 
 
     .full-banner-flex {
@@ -700,7 +702,7 @@ footer .logo>h3 {
         position: relative;
         right: -47px;
         bottom: 66px;
-        
+
     }
 
     .play-instantly-image img:nth-child(2) {
