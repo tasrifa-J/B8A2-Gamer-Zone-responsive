@@ -73,7 +73,7 @@ nav .logo>h3 {
     color: #3C354F;
 }
 
-.top-right-all ul li a:hover{
+.top-right-all ul li a:hover {
     color: #F948B2;
 }
 
@@ -148,14 +148,14 @@ nav .logo>h3 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
+
 }
 
-.button-group>button{
+.button-group>button {
     transition: width 1s;
 }
 
-.button-group>button:hover{
+.button-group>button:hover {
     position: relative;
     bottom: 10px;
 }
@@ -212,9 +212,9 @@ nav .logo>h3 {
 
 .online-gaming-main>div>img:hover {
     background: #000;
-    opacity: 20%;
+    filter: brightness(50%);
     border-radius: 16px;
-    transition: opacity 0.5s;
+    transition: filter 0.5s;
     cursor: pointer;
 }
 
@@ -252,8 +252,9 @@ nav .logo>h3 {
 
 .play-instantly-title {
     max-width: 300px;
-    position: relative;
-    top: 150px;
+    position: absolute;
+    left: 168px;
+    top: 120em;
     text-align: center;
 }
 
@@ -273,19 +274,26 @@ nav .logo>h3 {
     float: inline-end;
 }
 
-.play-instantly-image img:nth-child(2) {
+.play-instantly-image {
     position: relative;
-    bottom: 255px;
-    left: -121px;
+    left: 360px;
+    top: 0;
+}
+
+.play-instantly-image img:nth-child(2) {
+    position: absolute;
+    bottom: -80px;
+    left: -150px;
 }
 
 #buttons-flex {
+    margin-top: 210px;
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 20px;
     overflow: hidden;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 .row-1 {
@@ -385,7 +393,7 @@ footer .logo>h3 {
     padding-right: 40px;
 }
 
-.foot-menu ul li a:hover{
+.foot-menu ul li a:hover {
     color: #F948B2;
 }
 
@@ -415,8 +423,8 @@ footer .logo>h3 {
     padding-right: 40px;
 }
 
-.foot-icons ul li a:hover{
-    color:#F948B2;
+.foot-icons ul li a:hover {
+    color: #F948B2;
 }
 
 .foot-menu-2 {
@@ -445,7 +453,7 @@ footer .logo>h3 {
     padding-right: 40px;
 }
 
-.foot-menu-2 ul li a:hover{
+.foot-menu-2 ul li a:hover {
     color: #F948B2;
 }
 
@@ -483,7 +491,7 @@ footer .logo>h3 {
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
 
     nav {
@@ -507,7 +515,22 @@ footer .logo>h3 {
 
     #banner {
         overflow: hidden;
+        display: flex;
     }
+
+    /* .banner-left {
+        margin-top: 50px;
+        position: absolute;
+        left: 40px;
+        top: 250px;
+    }
+
+    .banner-right {
+        position: absolute;
+        right: 10px;
+        top: 305px;
+    } */
+
 
     .full-banner-flex {
         flex-direction: column;
@@ -528,10 +551,23 @@ footer .logo>h3 {
 }
 
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
     #banner {
         overflow: hidden;
+    }
+
+    .banner-left {
+        margin-top: 50px;
+        position: absolute;
+        left: 40px;
+        top: 250px;
+    }
+
+    .banner-right {
+        position: absolute;
+        right: 10px;
+        top: 305px;
     }
 
     .full-banner-flex {
@@ -591,7 +627,7 @@ footer .logo>h3 {
 
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
     .online-gaming-main {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -628,19 +664,19 @@ footer .logo>h3 {
     .play-instantly-image img:nth-child(1) {
         width: 80%;
         position: relative;
-        left: 20px;
+        left: -333px;
     }
 
     .play-instantly-image img:nth-child(2) {
         width: 40%;
         position: relative;
-        bottom: 171px;
-        left: -126px;
+        bottom: 133px;
+        left: -479px;
     }
 
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
     #play-instantly-flex {
         flex-direction: column;
         justify-content: center;
@@ -656,20 +692,26 @@ footer .logo>h3 {
 
     .play-instantly-image {
         margin-top: -100px;
-
+        position: static;
     }
 
     .play-instantly-image img:nth-child(1) {
         width: 80%;
         position: relative;
-        left: 20px;
+        right: -47px;
+        bottom: 66px;
+        
     }
 
     .play-instantly-image img:nth-child(2) {
         width: 40%;
         position: relative;
-        bottom: 180px;
+        bottom: 298px;
         left: -190px;
+    }
+
+    #buttons-flex {
+        margin-top: 0;
     }
 }
 
@@ -686,7 +728,7 @@ footer .logo>h3 {
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
     .row-1,
     .row-2 {
@@ -701,26 +743,30 @@ footer .logo>h3 {
 /* footer */
 
 @media only screen and (max-width: 576px) {
-    .foot-menu ul, .foot-menu-2 ul{
+
+    .foot-menu ul,
+    .foot-menu-2 ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .foot-para{
+    .foot-para {
         display: flex;
         text-align: center;
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    .foot-menu ul, .foot-menu-2 ul{
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+    .foot-menu ul,
+    .foot-menu-2 ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .foot-para{
+    .foot-para {
         display: flex;
         text-align: center;
     }
